@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: 200px;
+    width: 50%;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .button-link {
+    padding: 20px 40px;
+    margin-left: 3px;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: yellow;
+  }
+
+  .button-link:hover {
+    background-color: navy;
+    text-align: center;
+  }
+
+.ending1 .ending2 .ending3 .ending4 {
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    align-items: center;
+  }
+ @media (max-width: 1200px) {
+    .row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .button-link {
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+}
