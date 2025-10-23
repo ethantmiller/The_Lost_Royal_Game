@@ -1,86 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    max-width: 800px;
-  }
-
-  .box {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    height: 200px;
-    width: 50%;
-    align-items: center;
-  }
-
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .row2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .button-link {
-    padding: 20px 40px;
-    margin-left: 3px;
-    text-decoration: none;
-    background-color: darkblue;
-    color: white;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    color: yellow;
-  }
-
-  .button-link:hover {
-    background-color: navy;
-    text-align: center;
-  }
-
-.ending1 .ending2 .ending3 .ending4 {
-  font-family: "Finger Paint", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf0;
 }
 
-  p {
-    text-align: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #20124d;
+  color: #ffff00;
+  padding: 5px;
+  border-radius: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.Ellie-May {
+  max-width: 100px;
+  height: auto;
+  padding: 25px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.section {
+  padding: 10px;
+  border: 1px solid #20124d;
+  border-radius: 8px;
+  background-color: #ffff00;
+}
+
+.footer-section {
+  grid-column: 1 / -1;
+  padding: 10px;
+  background-color: #20124d;
+  color: #ffff00;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.button-link {
+  text-decoration: none;
+  text-align: center;
+  background-color: #20124d;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  padding: 5px;
+}
+
+.button-link:hover {
+  background-color: navy;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-family: "Finger Paint", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #20124d;
+}
+
+@media (min-width: 768px) {
+
+  .question-section, .lore-section {
+    display: block;
+    gap: 10px;
   }
 
-  h1 {
-    text-align: center;
+  .option1-section, .option2-section {
+    display: block;
+    gap: 10px;
   }
 
-  img {
-    align-items: center;
+  h2 {
+    grid-column: 1 / 3;
   }
- @media (max-width: 1200px) {
-    .row {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .button-link {
-      margin-left: 0;
-      margin-top: 10px;
-      text-align: center;
-    }
 }
